@@ -1,0 +1,19 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 10.09.2018
+* Description   : Feuille de style gérant la base des styles
+**/
+html {
+    font-family: "Lato", helvetica, arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+body {
+    color: #687788;
+    margin: 0;
+    padding: 0;
+}
