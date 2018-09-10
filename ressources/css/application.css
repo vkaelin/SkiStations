@@ -12,4 +12,6 @@
 @import url("base.css");
 
 /* Atoms */
-@import url("atoms/typography.css");
+@import url("typography.css");
+
+@import url("homepage.css");
