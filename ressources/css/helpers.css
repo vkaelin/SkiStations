@@ -4,3 +4,10 @@
 * Date          : 10.09.2018
 * Description   : Feuille de style gérant les classes helpers
 **/
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
