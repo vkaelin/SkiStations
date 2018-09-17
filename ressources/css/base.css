@@ -9,7 +9,12 @@ html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
-  background-color: #ffffff;
+  background: #ffffff;
+
+  background-image: url(http://kalane.ch/yolo/background-skistations-4.png);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: 800px;
 }
 
 body {
