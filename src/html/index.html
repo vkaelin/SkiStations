@@ -14,6 +14,8 @@
 
     <title>Valentin Kaelin</title>
 
+    <script src="https://use.fontawesome.com/4bfaacc9de.js"></script>
+
     <link rel="stylesheet" type="text/css" href="../../ressources/css/application.css" />
     <script src="../js/main.js" charset="utf-8"></script>
 </head>
@@ -46,22 +48,55 @@
       </div>
     </div>
   </header>-->
-
   <header>
-    <div id="header-content">
-      <img src="http://kalane.ch/yolo/logo-skistations-4.png" class="logo">
-      <ul>
-        <li class="home"><a href="/"><span class="img-home"></span><span>Accueil</span></a></li>
+    <div class="header-content">
+      <img src="http://kalane.ch/yolo/logo-skistations-4.png" class="header__logo">
+      <div class="page-name">
+        Accueil
+      </div>
+      <a href="#" data-activates="nav-mobile" class="toggle-mobile">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="global-nav">
+        <li class="home global-nav__element">
+          <a href="/">
+            <div class="img-home img-nav"></div>
+            <div class="text-nav">Accueil</div>
+          </a>
+        </li>
 
-        <li class="pancake"><a href="/pancakes"><span class="img-pancake"></span><span>Passion</span></a>
+        <li class="passion global-nav__element">
+          <a href="#">
+            <div class="img-passion img-nav"></div>
+            <div class="text-nav">Passion</div>
+          </a>
       </li>
 
-      <li class="home"><a href="/"><span class="img-home"></span><span>Stats</span></a></li>
-      <li class="contact"><a href="/contact"><span class="img-contact" style="background-position: 0px 0px;"></span><span>Contact</span></a>
+      <li class="stats global-nav__element">
+        <a href="#">
+          <div class="img-stats img-nav"></div>
+          <div class="text-nav">Stats</div>
+        </a>
+      </li>
+      <li class="contact global-nav__element">
+        <a href="#">
+          <div class="img-contact img-nav"></div>
+          <div class="text-nav">Contact</div>
+        </a>
     </li>
   </ul>
 </div>
 </header>
+
+<!--<nav>
+  <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+    <i class="material-icons grey-text text-lighten-3 small">menu</i>
+  </a>
+  <div class="center" style="margin-right: 40px !important;">
+    <img src="http://kalane.ch/yolo/logo-skistations-4.png" width="50" style="vertical-align: middle;">
+    Contact
+  </div>
+</nav>-->
 
   <p>Test</p>
   <p>Test</p>
