@@ -15,5 +15,8 @@
 /* Atoms */
 @import url("typography.css");
 
-@import url("homepage.css");
+/* Components */
 @import url("header.css");
+
+/* Pages */
+@import url("homepage.css");

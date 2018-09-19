@@ -5,7 +5,7 @@
 * Description   : Feuille de style gérant la navigation principale du site
 **/
 
-header {
+.header {
   display: flex;
   margin: 25px 0 10px 0;
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -66,19 +66,19 @@ header {
   transition: all 0.5s;
 }
 
-.header-content .img-home {
+.img-home {
   background-image: url('../../ressources/images/navbar/home.png');
 }
 
-.header-content .img-stats {
+.img-stats {
   background-image: url('../../ressources/images/navbar/stats.png');
 }
 
-.header-content .img-contact {
+.img-contact {
   background-image: url('../../ressources/images/navbar/contact.png');
 }
 
-.header-content .img-passion {
+.img-passion {
   background-image: url('../../ressources/images/navbar/mountains.png');
 }
 
@@ -87,13 +87,19 @@ header {
   transition: all 0.5s;
 }
 
-/* RESPONSIVE */
+/***********************
+      RESPONSIVE
+***********************/
 .toggle-mobile,
 .page-name {
   display: none;
 }
 
 @media only screen and (max-width: 1000px) {
+  .header {
+    margin: 0 0 10px 0;
+  }
+
   .header-content {
     display: flex;
     align-items: center;
@@ -110,7 +116,7 @@ header {
     position: static;
     width: 50px;
     height: 50px;
-    margin: 0;
+    margin: 0 0 0 auto;
   }
 
   .page-name {
@@ -122,8 +128,70 @@ header {
 
   .toggle-mobile {
     display: block;
-    margin-left: auto;
     color: #eee;
     font-size: 2.7rem;
   }
+}
+
+/* Side nav */
+.side-nav {
+  position: fixed;
+  z-index: 1000;
+  width: 200px;
+  left: 0;
+  top: 0;
+  padding: 0 0 60px 0;
+  margin: 0;
+  height: calc(100% + 60px);
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  list-style-type: none;
+
+  transform: translateX(-100%);
+  transition:  all 0.5s;
+}
+
+.side-nav--overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+
+  display: none;
+}
+
+.side-nav img {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px 20px 10px 20px;
+}
+
+.side-nav a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  line-height: 48px;
+  text-decoration: none;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.side-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.side-nav .img-side-nav {
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.side-nav .side-nav__text {
+  font-size: 14px;
+  font-weight: 300;
 }
