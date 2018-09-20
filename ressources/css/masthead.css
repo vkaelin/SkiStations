@@ -1,0 +1,29 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 20.09.2018
+* Description   : Feuille de style gérant le masthead de la page d'accueil du site
+**/
+.masthead {
+    background: #afbac4 url('../images/masthead.jpg') no-repeat 50% 50%/cover;
+    border-bottom: 1px solid #e3e5e9;
+    padding: 1.6rem 0;
+    margin: 0 0 6.4rem;
+}
+
+@media screen and (min-width: 720px) {
+    .masthead {
+        padding: 12.8rem 0 16rem;
+    }
+}
+
+.masthead h1 {
+    text-align: center;
+    color: #fff;
+}
+
+
+.masthead .input-inline__label {
+    color: #fff;
+}
+

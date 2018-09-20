@@ -1,0 +1,52 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 20.09.2018
+* Description   : Feuille de style gérant les différents formulaires du site
+**/
+
+/* INLINE */
+.input-inline {
+    margin: 0 auto 30px auto; 
+}
+
+@media screen and (min-width: 600px) {
+    .input-inline {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-inline {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .input-inline {
+        max-width: 40%;
+    }
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-inline__label {
+    display: inline-block;
+    margin: 0 0 7.5px;
+    cursor: pointer;
+}
+
+.input-row__field {
+    flex: 1 0 auto;
+    background-color: #fff;
+    border: 1px solid #e3e5e9;
+    box-shadow: none;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+}

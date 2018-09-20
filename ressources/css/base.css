@@ -11,7 +11,7 @@ html {
   line-height: 1.6;
   background: #ffffff;
 
-  background-image: url(http://kalane.ch/yolo/background-skistations-4.png);
+  background-image: url('../images/background.png');
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-size: 800px;
@@ -21,4 +21,22 @@ body {
   color: #687788;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
 }
