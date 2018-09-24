@@ -49,3 +49,12 @@ color: #2F365F;
     border-radius: 0;
     border-left-width: 0;
 }
+
+.btn--flex {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    color: #687788;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
