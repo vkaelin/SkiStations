@@ -2,12 +2,8 @@
 * ETML
 * Auteur        : Valentin Kaelin
 * Date          : 10.09.2018
-* Description   : Feuille de style principale du site, gère tous les import
+* Description   : Feuille de style principale du site, gère les import des fichiers css
 **/
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 /* Bases */
 @import url("base.css");
 @import url("helpers.css");
@@ -18,8 +14,10 @@
 
 /* Components */
 @import url("header.css");
+@import url("footer.css");
 @import url("masthead.css");
 @import url("forms.css");
+@import url("cards.css");
 
 /* Pages */
 @import url("homepage.css");

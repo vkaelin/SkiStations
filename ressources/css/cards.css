@@ -1,0 +1,126 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 24.09.2018
+* Description   : Feuille de style gérant les composants cartes
+**/
+/*  Card */
+.card {
+    box-shadow: 0 0 20px rgba(0,0,0,0.14);
+    margin: 0 16px 16px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.34);
+}
+
+.card__thumb {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.card__thumb img {
+    width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    filter: brightness(0.4);
+}
+
+.card__thumb .card__thumb__tag {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.card__intro {
+    padding: 1.6em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card__intro span {
+    font-size: 1.3em;
+}
+
+.card__title {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Card footer w/buttons */
+.card__footer {
+    display: flex;
+}
+
+.card__footer .btn {
+    border: none;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.card__footer .btn--left {
+    border-right: 1px solid #F5F7F9;
+    flex: 1 0 auto;
+    text-align: left;
+    border-radius: 0 0 0 8px;
+}
+
+.card__footer .btn--right {
+    border-radius: 0 0 8px 0;
+}
+
+.card__footer .btn--solo {
+    flex: 1 0 auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.card__footer .btn--triple {
+    width: calc(100% / 3);
+    justify-content: center;
+    border-right: 1px solid #F5F7F9;
+}
+.card__footer .btn--triple:first-child {
+    border-radius: 0 0 0 8px;
+}
+
+.card__footer .btn--triple:last-child {
+    border-radius: 0 0 8px 0;
+    border-right: none;
+}
+
+
+/*  Cards deck */
+.cards {
+display: flex;
+flex-wrap: wrap;
+
+margin-right: -16px;
+}
+.cards::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: 100%;
+
+    /*@include tablet {
+    float: left;
+    width: calc(50% - #{$pulse});
+    }
+
+    @include desktop {
+    width: calc(33% - #{$pulse});
+    }*/
+}

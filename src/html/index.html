@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <!--
@@ -17,7 +17,7 @@
     <script src="https://use.fontawesome.com/4bfaacc9de.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../../ressources/css/application.css" />
-    <script src="../js/main.js" charset="utf-8"></script>
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
       <a href="#" data-activates="nav-mobile" class="toggle-mobile">
         <i class="fa fa-bars"></i>
       </a>
-      <img src="../../ressources/images/logo.png" class="header__logo">
+      <img src="../../ressources/images/logo.png" alt="logo" class="header__logo">
       <div class="page-name">
         Accueil
       </div>
@@ -63,9 +63,9 @@
     </div>
   </header>
 
-  <nav>
-    <ul class="side-nav">
-      <img src="../../ressources/images/logo.png">
+  <nav class="side-nav">
+    <img src="../../ressources/images/logo.png" alt="logo" class="side-nav__logo">
+    <ul >
       <li>
         <a href="/">
           <div class="img-home img-side-nav"></div>
@@ -95,25 +95,56 @@
   <div class="side-nav--overlay"></div>
 
   <main>
-
-        <div class="masthead">
-            <div class="container">
-              <h1>Trouve la station de ski de tes rêves</h1>
-              <form method="get" action=" ">
-                <div class="input-inline">
-                  <label class="input-inline__label" for="banner-search-input">Inspire moi</label>
-                  <div class="input-row">
-                    <input id="banner-search-input" class="input-row__field" type="text" name="search" placeholder="ex. Zermatt">
-                    <button class="btn btn--inline btn--primary" type="submit">Rechercher</button>
-                  </div>
-                </div>
-              </form>
+    <div class="masthead">
+      <div class="container">
+        <h1>Trouve la station de ski de tes rêves</h1>
+        <form method="get" action="#">
+          <div class="input-inline">
+            <label class="input-inline__label" for="banner-search-input">Inspire moi</label>
+            <div class="input-row">
+              <input id="banner-search-input" class="input-row__field" type="text" name="search" placeholder="ex. Zermatt">
+              <button class="btn btn--inline btn--primary" type="submit">Rechercher</button>
             </div>
           </div>
+        </form>
+      </div>
+    </div>
 
+    <div class="container">
+      <h2>Quelques stations</h2>
+    </div>
   </main>
 
 
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+  <p>Test</p>
+
+
+  <footer class="footer">
+      <div class="container">
+        <ul class="global-nav">
+          <li class="logo">
+            <a href="/">
+              <span class="logo__letter">S</span>
+              <span class="logo__name">kiStations</span>
+            </a>
+          </li>
+          <li><a href="#">Passion</a></li>
+          <li><a href="#">Stats</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="copyright">&copy; Valentin Kaelin 2018</p>
+      </div>
+    </footer>
 
 
 </body>

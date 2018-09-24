@@ -1,0 +1,62 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 24.09.2018
+* Description   : Feuille de style gérant le bas de page du site
+**/
+.footer {
+    background-color: #2F365F;
+    color: #bbc1c6;
+    padding: 48px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .global-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .global-nav > li:first-child {
+    margin: 0;
+}
+
+.footer .global-nav > li {
+    float: left;
+    margin-left: 16px;
+}
+
+.footer a {
+    color: #bbc1c6;
+    text-decoration: none;
+}
+
+.footer .logo a {
+    font-family: 'GT-Eesti', 'Lato', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.footer .logo__letter {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer .logo__name {
+    font-size: 18px;
+}

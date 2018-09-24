@@ -4,6 +4,14 @@
 * Date          : 10.09.2018
 * Description   : Feuille de style gérant les styles des différents textes
 **/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url('../../ressources/fonts/GT-Eesti-Display-Medium.ttf');
+}
+
 p, ul, ol, span, label {
     font-size: 1.6em;
 }
