@@ -6,100 +6,67 @@
 **/
 /*  Card */
 .card {
-    box-shadow: 0 0 20px rgba(0,0,0,0.14);
-    /*margin: 0 16px 16px 0;*/
     margin: 0 0 16px 0;
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    font-size: 1rem;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    border-radius: 0.25rem;
+    background-color: #fff;
 }
 
 .card:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,0.34);
-}
-
-.card__thumb {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    height: 100%;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.22), 0 5px 15px 0 rgba(0,0,0,.16);
 }
 
 .card__thumb img {
     width: 100%;
     display: block;
-    border-radius: 8px 8px 0 0;
-    height: 100%;
-    /*filter: brightness(0.4);*/
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 250px;
+  
     object-fit: cover;
 }
 
-.card__thumb .card__thumb__tag {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-}
-
-.card__intro {
-    padding: 1.6em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.card__intro span {
-    font-size: 1.3em;
+.card__text {
+    padding: 16px 24px;
 }
 
 .card__title {
-    font-size: 2em;
-    color: #fff;
+    font-size: 20px;
+    color: #22292F;
+    margin-bottom: .5rem;
+    font-weight: 700;
 }
 
-/* Card footer w/buttons */
+.card__desc {
+    font-size: 16px;
+    color: #606f7b;
+    margin: 0 0 32px 0;
+}
+
 .card__footer {
-    display: flex;
+    padding: 0 24px 16px;
 }
 
-.card__footer .btn {
-    border: none;
-    border-radius: 0;
-    white-space: nowrap;
+.card__tag {
+    font-size: 14px;
+    color: #606f7b;
+    padding: 4px 12px;
+    margin: 4px 8px 0;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 9999px;
+    background-color: #f1f5f8;
 }
 
-.card__footer .btn--left {
-    border-right: 1px solid #F5F7F9;
-    flex: 1 0 auto;
-    text-align: left;
-    border-radius: 0 0 0 8px;
+.card__tag .fas {
+    margin-right: 5px;
 }
 
-.card__footer .btn--right {
-    border-radius: 0 0 8px 0;
-}
-
-.card__footer .btn--solo {
-    flex: 1 0 auto;
-    border-radius: 0 0 8px 8px;
-}
-
-.card__footer .btn--triple {
-    width: calc(100% / 3);
-    justify-content: center;
-    border-right: 1px solid #F5F7F9;
-}
-.card__footer .btn--triple:first-child {
-    border-radius: 0 0 0 8px;
-}
-
-.card__footer .btn--triple:last-child {
-    border-radius: 0 0 8px 0;
-    border-right: none;
+.card__tag:hover {
+    color: #2F365F;
 }
 
 
@@ -128,51 +95,4 @@
     .card {
         width: calc(33% - 16px);
     }
-}
-
-
-
-
-
-/* Test 2 */
-.card__footer-2 {
-    padding: 16px 24px;
-}
-
-.card__subtitle {
-    font-size: 20px;
-    color: #22292F;
-    margin-bottom: .5rem;
-    font-weight: 700;
-}
-
-.card__text {
-    font-size: 16px;
-    color: #606f7b;
-    margin: 0;
-}
-
-.card__tag {
-    font-size: 14px;
-    color: #606f7b;
-    padding: 4px 12px;
-    margin-right: 8px;
-    font-weight: 600;
-    display: inline-block;
-    border-radius: 9999px;
-    background-color: #f1f5f8;
-}
-
-.card__tag .fas {
-    margin-right: 5px;
-}
-
-.card__tag:hover {
-    color: #2F365F;
-}
-
-.card-1 {
-    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08) !important;
-    border-radius: 0.25rem !important;
-    background-color: #fff;
 }
