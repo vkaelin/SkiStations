@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
+  /* Navbar */
   const toggleHeader = document.querySelector('.toggle-mobile');
   const sideNav = document.querySelector('.side-nav');
   const sideNavOverlay = document.querySelector('.side-nav--overlay');
@@ -20,4 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
     sideNav.style.transform = 'translateX(-100%)';
     sideNavOverlay.style.display = 'none';
   }
+
+
+  /* Search in masthead */
+  const searchBtnMasthead = document.querySelector('.masthead .input-row .btn');
+ 
+  window.addEventListener('resize', () => {
+    searchBtnMasthead.innerHTML = (window.innerWidth < 400 ? '<i class="fas fa-search"></i>' : 'Rechercher');
+  });
+  
+
  });
