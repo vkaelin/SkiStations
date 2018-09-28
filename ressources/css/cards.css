@@ -36,7 +36,7 @@
 .card__title {
     font-size: 20px;
     color: #22292F;
-    margin-bottom: .5rem;
+    margin-bottom: 5px;
     font-weight: 700;
 }
 
@@ -59,6 +59,8 @@
     display: inline-block;
     border-radius: 9999px;
     background-color: #f1f5f8;
+
+    position: relative; /* For tooltip */
 }
 
 .card__tag .fas {
@@ -67,6 +69,43 @@
 
 .card__tag:hover {
     color: #2F365F;
+}
+
+.card__tag .tooltiptext {
+    width: 120px;
+    visibility: hidden;
+    background-color: #3D4852;
+    color: #fff;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px; /* center it */
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card__tag .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px; /* center it */
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3D4852 transparent transparent transparent;
+}
+
+.card__tag:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 

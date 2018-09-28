@@ -2,49 +2,49 @@
     {
         "name": "Villars",
         "price": 55,
-        "canton": "VD",
+        "canton": "Vaud",
         "km": 84
     },
     {
         "name": "Diablerets",
         "price": 44,
-        "canton": "VD",
+        "canton": "Vaud",
         "km": 84
     },
     {
         "name": "Verbier",
         "price": 70,
-        "canton": "VS",
+        "canton": "Valais",
         "km": 412
     },
     {
         "name": "Zermatt",
         "price": 79,
-        "canton": "VS",
+        "canton": "Valais",
         "km": 322
     },
     {
         "name": "Les Pléiades",
         "price": 35,
-        "canton": "VD",
+        "canton": "Vaud",
         "km": 15
     },
     {
         "name": "Crans Montana",
         "price": 69,
-        "canton": "VS",
+        "canton": "Valais",
         "km": 140
     },
     {
         "name": "Leysin",
         "price": 55,
-        "canton": "VD",
+        "canton": "Vaud",
         "km": 100
     },
     {
         "name": "Gstaad",
         "price": 65,
-        "canton": "BE",
+        "canton": "Berne",
         "km": 200
     }
 ]
