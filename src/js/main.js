@@ -25,10 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* Search in masthead */
   const searchBtnMasthead = document.querySelector('.masthead .input-row .btn');
- 
+
+  changeBtnMasthead();
   window.addEventListener('resize', () => {
-    searchBtnMasthead.innerHTML = (window.innerWidth < 400 ? '<i class="fas fa-search"></i>' : 'Rechercher');
+    changeBtnMasthead();
   });
   
+  function changeBtnMasthead() {
+    searchBtnMasthead.innerHTML = (window.innerWidth < 400 ? '<i class="fas fa-search"></i>' : 'Rechercher');
+  }
 
  });
