@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'GT-Eesti';
-  src: url('gt-eesti-display-medium-webfont.woff2') format('woff2'),
-       url('gt-eesti-display-medium-webfont.woff') format('woff');
+  src: url('../../ressources/fonts/gt-eesti-display-medium-webfont.woff2') format('woff2'),
+       url('../../ressources/fonts/gt-eesti-display-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
