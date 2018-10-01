@@ -54,6 +54,15 @@
   background-color: #2F365F;
 }
 
+/*.header-content .global-nav .active {
+  color: #fafafa;
+  background-color: #B8C2CC;
+}
+
+.header-content .global-nav .active .img-nav {
+  background-position: 0 -45px;
+}*/
+
 .header-content .img-nav,
 .header-content .text-nav{
   transform: skewX(10deg);
@@ -80,7 +89,7 @@
   background-image: url('../../ressources/images/navbar/contact.png');
 }
 
-.img-passion {
+.img-stations {
   background-image: url('../../ressources/images/navbar/mountains.png');
 }
 

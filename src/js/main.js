@@ -1,14 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+/**
+ * ETML
+ * Auteur : Valentin Kaelin
+ * Date : 10.09.2018
+ * Description : Gère le responsive du header
+ */
+
+document.addEventListener("DOMContentLoaded", function() {
 
   /* Navbar */
-  const toggleHeader = document.querySelector('.toggle-mobile');
-  const sideNav = document.querySelector('.side-nav');
-  const sideNavOverlay = document.querySelector('.side-nav--overlay');
+  var toggleHeader = document.querySelector('.toggle-mobile');
+  var sideNav = document.querySelector('.side-nav');
+  var sideNavOverlay = document.querySelector('.side-nav--overlay');
 
-  toggleHeader.addEventListener('click', () => {
+  toggleHeader.addEventListener('click', function() {
     if (sideNav.style.transform === 'translateX(-100%)' || sideNav.style.transform === '') { // Si fermé, on ouvre
-        sideNav.style.transform = 'translateX(0px)';
-        sideNavOverlay.style.display = 'block';
+      sideNav.style.transform = 'translateX(0px)';
+      sideNavOverlay.style.display = 'block';
     } else {  // Si ouvert, on ferme
       closeSideNav();
     }
@@ -22,17 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
     sideNavOverlay.style.display = 'none';
   }
 
-
-  /* Search in masthead */
-  const searchBtnMasthead = document.querySelector('.masthead .input-row .btn');
-
-  changeBtnMasthead();
-  window.addEventListener('resize', () => {
-    changeBtnMasthead();
-  });
-  
-  function changeBtnMasthead() {
-    searchBtnMasthead.innerHTML = (window.innerWidth < 400 ? '<i class="fas fa-search"></i>' : 'Rechercher');
-  }
-
- });
+});

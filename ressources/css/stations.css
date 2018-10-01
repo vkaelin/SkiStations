@@ -1,0 +1,14 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 01.10.2018
+* Description   : Feuille de style spécifique à la page sur les stations
+**/
+
+.btn-group {
+  margin: 0 0 16px 0;
+}
+
+.btn-group .btn {
+  margin: 0 0 5px 0;
+}

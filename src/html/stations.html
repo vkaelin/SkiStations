@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!--
+    Auteur      : Valentin Kaelin
+    Date        : 01.10.2018
+    Description : Page listant les différentes stations
+    -->
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Stations | Ski Stations</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="../../ressources/css/application.css" />
+  <script src="../js/main.js"></script>
+  <script src="../js/stations.js"></script>
+</head>
+
+<body>
+  <!-- START HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <a href="#" data-activates="nav-mobile" class="toggle-mobile">
+        <i class="fa fa-bars"></i>
+      </a>
+      <img src="../../ressources/images/logo.png" alt="logo" class="header__logo">
+      <div class="page-name">
+        Accueil
+      </div>
+      <nav>
+        <ul class="global-nav">
+          <li class="home global-nav__element">
+            <a href="index.html">
+              <div class="img-home img-nav"></div>
+              <div class="text-nav">Accueil</div>
+            </a>
+          </li>
+
+          <li class="stations global-nav__element">
+            <a href="stations.html" class="active">
+              <div class="img-stations img-nav"></div>
+              <div class="text-nav">Stations</div>
+            </a>
+          </li>
+
+          <li class="stats global-nav__element">
+            <a href="stats.html">
+              <div class="img-stats img-nav"></div>
+              <div class="text-nav">Stats</div>
+            </a>
+          </li>
+          <li class="contact global-nav__element">
+            <a href="contact.html">
+              <div class="img-contact img-nav"></div>
+              <div class="text-nav">Contact</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="side-nav">
+    <img src="../../ressources/images/logo.png" alt="logo" class="side-nav__logo">
+    <ul>
+      <li>
+        <a href="index.html">
+          <div class="img-home img-side-nav"></div>
+          <span class="side-nav__text">Accueil</span>
+        </a>
+      </li>
+      <li>
+        <a href="stations.html">
+          <div class="img-stations img-side-nav"></div>
+          <span class="side-nav__text">Stations</span>
+        </a>
+      </li>
+      <li>
+        <a href="stats.html">
+          <div class="img-stats img-side-nav"></div>
+          <span class="side-nav__text">Stats</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <div class="img-contact img-side-nav"></div>
+          <span class="side-nav__text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="side-nav--overlay"></div>
+  <!-- END HEADER -->
+
+  <main>
+    <div class="container mt-64">
+      <h2 class="border-l">Stations</h2>
+
+      <div id="filters">
+        <div class="btn-group">
+          <button class="btn btn--primary">Toutes</button>
+          <button class="btn">Vaud</button>
+          <button class="btn">Valais</button>
+          <button class="btn">Berne</button>
+        </div>
+      </div>
+
+      <ul class="cards bare-list">
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/diablerets.jpg" alt="Diablerets">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Diablerets</div>
+              <p class="card__desc">
+                Les Diablerets est une station de ski vaudoise, implantée à 1128 m d'altitude sur la commune
+                d'Ormont-Dessus.
+                Située au pied d’un imposant massif montagneux, entre le lac Léman et la station de Gstaad, elle est
+                voisine
+                d'autres stations comme Villars, Leysin, Les Mosses.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Vaud
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              45 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              87 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/gstaad.jpg" alt="Gstaad">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Gstaad</div>
+              <p class="card__desc">
+                Cette destination se compose en fait de 10 villages de chalet situés entre 1000m et 1400m d’altitude.
+                Une
+                destination qui a su rester authentique et alpine malgré un très long passé touristique.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Berne
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              65 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              200 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/leysin.jpg" alt="Leysin">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Leysin</div>
+              <p class="card__desc">
+                Située à 1263 m. d'altitude, la station de ski de Leysin bénéficie d’une exposition exceptionnelle. Son
+                domaine
+                skiable, son Tobogganing Park, son restaurant tournant "Le Kuklos" et ses écoles internationales en
+                sont les
+                principales particularités.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Vaud
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              55 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              100 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/champery.jpg" alt="Champéry">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Champéry</div>
+              <p class="card__desc">
+                La station de Champéry est l’une des plus anciennes destinations touristiques de Suisse. Cette station
+                Valaisanne du
+                Bas Chablais attire chaque hiver des milliers de skieurs venus se faire plaisir sur une partie de
+                l’immense
+                domaine
+                des Portes du Soleil.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Valais
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              63 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              650 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/crans-montana.jpg" alt="Crans Montana">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Crans Montana</div>
+              <p class="card__desc">
+                Posée sur un plateau généreusement ensoleillé, entourée de hauts sommets, Crans Montana est une des
+                plus
+                prestigieuses station de ski de Suisse. La station est onnue pour son superbe domaine skiable mais
+                également pour ses
+                nombreuses possibilités de shopping.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Valais
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              69 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              140 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/les-crosets.jpg" alt="Les Crosets">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Les Crosets</div>
+              <p class="card__desc">
+                La station des Crosets est particulièrement appréciée pour sa situation au pied des pistes et pour son
+                enneigement exceptionnel. Les Crosets est également une porte d'entrée du domaine franco-suisse des
+                Portes du
+                Soleil.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Valais
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              63 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              650 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/verbier.JPG" alt="Verbier">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Verbier</div>
+              <p class="card__desc">
+                Juchée sur un plateau ensoleillé au cœur des montagnes à 1500m d’altitude, la station de Verbier a su
+                mélanger le charme d’un village alpin avec les besoins d’une station de ski moderne et huppée.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Valais
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              70 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              412 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/villars.JPEG" alt="Villars">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Villars</div>
+              <p class="card__desc">
+                Villars/Gryon est niché sur un balcon naturel et ensoleillé offrant au sud une vue imprenable sur les
+                Dents-du-Midi. Sa facilité d'accès est unique. Villars/Gryon offre un très large éventail d'activités
+                sportives et d'excursions pour familles, skieurs ou non.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Vaud
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              55 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              84 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-content">
+            <a class="card__thumb" href="#">
+              <img src="../../ressources/images/zermatt.jpg" alt="Zermatt">
+            </a>
+            <div class="card__text">
+              <div class="card__title">Zermatt</div>
+              <p class="card__desc">
+                Zermatt se niche au pied du Cervin, la montagne la plus photographiée au monde. Près d'un tiers des
+                sommets alpins de plus de 4000 mètres encadrent majestueusement la station de ski de Zermatt qui est
+                devenu, de ce fait, le paradis des alpinistes les plus chevronnés.
+              </p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <span class="card__tag">
+              <i class="fas fa-map-marker-alt"></i>
+              Valais
+              <span class="tooltiptext">Lieu de la station</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-dollar-sign"></i>
+              79 chf
+              <span class="tooltiptext">Prix 1 journée</span>
+            </span>
+            <span class="card__tag">
+              <i class="fas fa-road"></i>
+              322 km
+              <span class="tooltiptext">Distance skiable</span>
+            </span>
+          </div>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </main>
+
+  <!-- START FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="global-nav">
+        <li class="logo">
+          <a href="index.html">
+            <span class="logo__letter">S</span>
+            <span class="logo__name">kiStations</span>
+          </a>
+        </li>
+        <li><a href="stations.html">Stations</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; Valentin Kaelin 2018</p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+</body>
+
+</html>

@@ -2,28 +2,28 @@
 <html lang="fr">
 
 <head>
-    <!--
+  <!--
     Auteur      : Valentin Kaelin
     Date        : 10.09.2018
     Description : Page d'accueil du site web
     -->
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ski Stations</title>
+  <title>Accueil | Ski Stations</title>
 
-    <!--<script src="https://use.fontawesome.com/4bfaacc9de.js"></script>-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
-
-
-    <link rel="stylesheet" type="text/css" href="../../ressources/css/application.css" />
-    <script src="../js/main.js"></script>
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="../../ressources/css/application.css" />
+  <script src="../js/main.js"></script>
+  <script src="../js/home.js"></script>
 </head>
 
 <body>
+  <!-- START HEADER -->
   <header class="header">
     <div class="header-content">
       <a href="#" data-activates="nav-mobile" class="toggle-mobile">
@@ -36,27 +36,27 @@
       <nav>
         <ul class="global-nav">
           <li class="home global-nav__element">
-            <a href="/">
+            <a href="index.html">
               <div class="img-home img-nav"></div>
               <div class="text-nav">Accueil</div>
             </a>
           </li>
 
-          <li class="passion global-nav__element">
-            <a href="#">
-              <div class="img-passion img-nav"></div>
-              <div class="text-nav">Passion</div>
+          <li class="stations global-nav__element">
+            <a href="stations.html">
+              <div class="img-stations img-nav"></div>
+              <div class="text-nav">Stations</div>
             </a>
           </li>
 
           <li class="stats global-nav__element">
-            <a href="#">
+            <a href="stats.html">
               <div class="img-stats img-nav"></div>
               <div class="text-nav">Stats</div>
             </a>
           </li>
           <li class="contact global-nav__element">
-            <a href="#">
+            <a href="contact.html">
               <div class="img-contact img-nav"></div>
               <div class="text-nav">Contact</div>
             </a>
@@ -68,27 +68,27 @@
 
   <nav class="side-nav">
     <img src="../../ressources/images/logo.png" alt="logo" class="side-nav__logo">
-    <ul >
+    <ul>
       <li>
-        <a href="/">
+        <a href="index.html">
           <div class="img-home img-side-nav"></div>
           <span class="side-nav__text">Accueil</span>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="img-passion img-side-nav"></div>
-          <span class="side-nav__text">Passion</span>
+        <a href="stations.html">
+          <div class="img-stations img-side-nav"></div>
+          <span class="side-nav__text">Stations</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="stats.html">
           <div class="img-stats img-side-nav"></div>
           <span class="side-nav__text">Stats</span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="contact.html">
           <div class="img-contact img-side-nav"></div>
           <span class="side-nav__text">Contact</span>
         </a>
@@ -96,6 +96,7 @@
     </ul>
   </nav>
   <div class="side-nav--overlay"></div>
+  <!-- END HEADER -->
 
   <main>
     <div class="masthead">
@@ -114,11 +115,11 @@
     </div>
 
     <div class="container">
-      <h2>Quelques stations</h2>
+      <h2 class="border-l">Quelques stations</h2>
 
 
       <ul class="cards bare-list">
-      
+
         <li class="card">
           <div class="card-content">
             <a class="card__thumb" href="#">
@@ -127,8 +128,10 @@
             <div class="card__text">
               <div class="card__title">Diablerets</div>
               <p class="card__desc">
-                Les Diablerets est une station de ski vaudoise, implantée à 1128 m d'altitude sur la commune d'Ormont-Dessus.
-                Située au pied d’un imposant massif montagneux, entre le lac Léman et la station de Gstaad, elle est voisine 
+                Les Diablerets est une station de ski vaudoise, implantée à 1128 m d'altitude sur la commune
+                d'Ormont-Dessus.
+                Située au pied d’un imposant massif montagneux, entre le lac Léman et la station de Gstaad, elle est
+                voisine
                 d'autres stations comme Villars, Leysin, Les Mosses.
               </p>
             </div>
@@ -160,7 +163,8 @@
             <div class="card__text">
               <div class="card__title">Gstaad</div>
               <p class="card__desc">
-                Cette destination se compose en fait de 10 villages de chalet situés entre 1000m et 1400m d’altitude. Une
+                Cette destination se compose en fait de 10 villages de chalet situés entre 1000m et 1400m d’altitude.
+                Une
                 destination qui a su rester authentique et alpine malgré un très long passé touristique.
               </p>
             </div>
@@ -192,8 +196,10 @@
             <div class="card__text">
               <div class="card__title">Leysin</div>
               <p class="card__desc">
-                Située à 1263 m. d'altitude, la station de ski de Leysin bénéficie d’une exposition exceptionnelle. Son domaine
-                skiable, son Tobogganing Park, son restaurant tournant "Le Kuklos" et ses écoles internationales en sont les
+                Située à 1263 m. d'altitude, la station de ski de Leysin bénéficie d’une exposition exceptionnelle. Son
+                domaine
+                skiable, son Tobogganing Park, son restaurant tournant "Le Kuklos" et ses écoles internationales en
+                sont les
                 principales particularités.
               </p>
             </div>
@@ -217,56 +223,10 @@
           </div>
         </li>
 
-      
-      
-        <!--<li class="card">
-          <a class="card__thumb" href="#">
-            <img src="../../ressources/images/portes-du-soleil.jpg" alt="Portes du soleil">
-      
-            <div class="card__intro">
-              <h3 class="card__title">Portes du soleil</h3>
-            </div>
-          </a>
-          <form class="card__footer">
-            <a class="btn btn--flex btn--solo" href="#">
-              yolo
-            </a> </form>
-        </li>
-      
-        <li class="card">
-          <a class="card__thumb" href="#">
-            <img src="https://img.youtube.com/vi/tISTO09N850/mqdefault.jpg" alt="Room image">
-      
-            <div class="card__intro">
-              <h3 class="card__title">Thomas' room</h3>
-            </div>
-          </a>
-          <form class="card__footer">
-            <a class="btn btn--flex btn--solo" href="#">
-              Join
-            </a> </form>
-        </li>
-      
-        <li class="card">
-          <a class="card__thumb" href="#">
-            <img src="https://img.youtube.com/vi/tISTO09N850/mqdefault.jpg" alt="Room image">
-      
-            <div class="card__thumb__tag tag--green">Joined</div>
-            <div class="card__intro">
-              <h3 class="card__title">test</h3>
-            </div>
-          </a>
-          <form class="card__footer">
-            <a class="btn btn--flex btn--solo" href="#">
-              Leave
-            </a> </form>
-        </li>-->
-      
-      
       </ul>
 
       <div class="see-more">
-        <a href="#" class="btn btn--shadow">Voir plus</a>
+        <a href="stations.html" class="btn btn--shadow">Voir plus</a>
       </div>
 
 
@@ -274,23 +234,24 @@
   </main>
 
 
-
+  <!-- START FOOTER -->
   <footer class="footer">
-      <div class="container">
-        <ul class="global-nav">
-          <li class="logo">
-            <a href="/">
-              <span class="logo__letter">S</span>
-              <span class="logo__name">kiStations</span>
-            </a>
-          </li>
-          <li><a href="#">Passion</a></li>
-          <li><a href="#">Stats</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <p class="copyright">&copy; Valentin Kaelin 2018</p>
-      </div>
-    </footer>
+    <div class="container">
+      <ul class="global-nav">
+        <li class="logo">
+          <a href="index.html">
+            <span class="logo__letter">S</span>
+            <span class="logo__name">kiStations</span>
+          </a>
+        </li>
+        <li><a href="stations.html">Stations</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; Valentin Kaelin 2018</p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
 
 
 </body>
