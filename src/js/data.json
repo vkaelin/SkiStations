@@ -67,5 +67,12 @@
     "canton": "Valais",
     "km": 650,
     "desc": "La station des Crosets est particulièrement appréciée pour sa situation au pied des pistes et pour son enneigement exceptionnel. Les Crosets est également une porte d'entrée du domaine franco-suisse des Portes du Soleil."
+  },
+  {
+    "name": "Saas Fee",
+    "price": 75,
+    "canton": "Valais",
+    "km": 100,
+    "desc": "\"Perle des Alpes\", c'est ainsi que l'on appelle la station de ski de Saas-Fee, perchée à 1800 mètres d'altitude. 13 «quatre mille» dont le Dom et ses 4545 mètres (la montagne la plus haute de Suisse) veillent sur la station et forment un décor unique."
   }
 ]
