@@ -4,6 +4,32 @@
 * Date          : 01.10.2018
 * Description   : Feuille de style spécifique à la page sur les stations
 **/
+.passion-desc {
+  background: #fff;
+  /*box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);*/
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.22), 0 5px 15px 0 rgba(0,0,0,.16);
+  border-radius: 0.25rem;
+  font-size: 1.6rem;
+
+  padding: 32px;
+  margin: 0 0 32px 0;
+  position: relative;
+}
+
+.passion-desc::after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.22);
+}
 
 .btn-group {
   margin: 0 0 16px 0;
