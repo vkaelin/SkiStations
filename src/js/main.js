@@ -7,6 +7,14 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
+
+  /* Activer le header et la side-nav si le JS est activé */
+  var headerWithJS = document.querySelector('.header.activeWithJs');
+  var sideNavWithJS = document.querySelector('.side-nav.activeWithJs');
+
+  headerWithJS.style.display = 'flex';
+  sideNavWithJS.style.display = 'block';
+
   /* Navbar */
   var toggleHeader = document.querySelector('.toggle-mobile');
   var sideNav = document.querySelector('.side-nav');

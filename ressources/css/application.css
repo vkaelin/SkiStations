@@ -11,6 +11,7 @@
 /* Atoms */
 @import url("typography.css");
 @import url("buttons.css");
+@import url("logo.css");
 
 /* Components */
 @import url("header.css");

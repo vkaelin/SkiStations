@@ -40,23 +40,3 @@
     color: #bbc1c6;
     text-decoration: none;
 }
-
-.footer .logo a {
-    font-family: 'GT-Eesti', 'Lato', sans-serif;
-    font-weight: normal;
-    color: #fff;
-    white-space: nowrap;
-
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.footer .logo__letter {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.footer .logo__name {
-    font-size: 18px;
-}

@@ -23,7 +23,7 @@
 
 <body>
   <!-- START HEADER -->
-  <header class="header">
+  <header class="header activeWithJs">
     <div class="header-content">
       <a href="#" data-activates="nav-mobile" class="toggle-mobile">
         <i class="fa fa-bars"></i>
@@ -65,7 +65,7 @@
     </div>
   </header>
 
-  <nav class="side-nav">
+  <nav class="side-nav activeWithJs">
     <img src="../../ressources/images/logo.png" alt="logo" class="side-nav__logo">
     <ul>
       <li>
@@ -95,6 +95,32 @@
     </ul>
   </nav>
   <div class="side-nav--overlay"></div>
+
+  <noscript>
+    <header class="header--no-JS">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <span class="logo__letter">S</span>
+            <span class="logo__name">kiStations</span>
+          </a>
+        </div>
+        <nav>
+          <ul class="global-nav">
+            <li>
+              <a href="stations.html">Stations</a>
+            </li>
+            <li>
+              <a href="stats.html">Stats</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </noscript>
   <!-- END HEADER -->
 
   <main>

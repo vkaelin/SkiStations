@@ -1,0 +1,25 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 08.10.2018
+* Description   : Feuille de style pour le logo du site, il est utilisé dans le header si le JS est desactivé et dans le footer
+**/
+.logo .logo__link {
+  font-family: 'GT-Eesti', 'Lato', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.logo__letter {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.logo__name {
+  font-size: 18px;
+}

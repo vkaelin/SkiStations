@@ -31,6 +31,10 @@
   box-shadow: 0 15px 30px 0 rgba(0,0,0,.22);
 }
 
+#filters {
+  display: none; /* On l'affiche seulement si le JS est activé */
+}
+
 .btn-group {
   margin: 0 0 16px 0;
 }

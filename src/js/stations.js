@@ -4,11 +4,15 @@
  * Date : 01.10.2018
  * Description : Gère le système de filtres des stations
  */
+var filters = document.querySelector('#filters');
 var filtersGroup = document.querySelector('#filters .btn-group');
 var filtersButtons = document.querySelectorAll('#filters .btn');
 
+// On affiche les filtres si le JS est activé
+filters.style.display = 'block';
 
-// bind the filterStationsByLand function to the group of buttons
+
+// ajout de la fonction filterStationsByLand à tous les boutons de filtres
 filtersGroup.addEventListener('click', (e) => {
   if (e.target.tagName == 'BUTTON') {
     filterStationsByLand(e);
