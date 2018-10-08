@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-.header-content .header__logo {
+.header-content #header__logo {
   width: 150px;
   position: absolute;
   margin-top: -22px;
@@ -112,7 +112,7 @@
     display: none;
   }
 
-  .header-content .header__logo {
+  .header-content #header__logo {
     position: static;
     width: 50px;
     height: 50px;
@@ -166,8 +166,8 @@
   margin: 0;
 }
 
-.side-nav__logo {
-  box-sizing: border-box;
+#side-nav__logo {
+  box-sizing: border-box; /* Pour que le padding soit compris dans les 200px de largeur */
   width: 200px;
   padding: 20px 20px 10px 20px;
 }
