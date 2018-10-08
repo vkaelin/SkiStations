@@ -55,7 +55,7 @@
 .header-content .img-nav,
 .header-content .text-nav{
   transform: skewX(10deg);
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 .header-content .img-nav {
@@ -122,14 +122,14 @@
   .page-name {
     display: inline-block;
     color: #fff;
-    font-size: 2rem;
+    font-size: 20px;
     margin-left: 15px;
   }
 
   .toggle-mobile {
     display: block;
     color: #eee;
-    font-size: 2.7rem;
+    font-size: 27px;
   }
 }
 
@@ -209,7 +209,6 @@
 .header--no-JS {
   background-color: #fff;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,.22), 0 5px 15px 0 rgba(0,0,0,.16);
-  font-size: 11px; /* TO CHANGE IN 18PX AFTER CHANGING TYPO FOR EVERYTHING */ 
 }
 
 .header--no-JS .container {
@@ -239,6 +238,7 @@
 }
 
 .header--no-JS a {
+  font-size: 18px;
   color: #2F365F;
   text-decoration: none;
 }
