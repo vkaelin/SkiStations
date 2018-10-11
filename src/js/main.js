@@ -8,7 +8,6 @@
 // On attend que le contenu HTML de la page soit chargé avant de lancer ce script
 document.addEventListener("DOMContentLoaded", function() {
 
-
   // Activer le header et la side-nav si le JS est activé
   var headerWithJS = document.querySelector('.header.activeWithJs');
   var sideNavWithJS = document.querySelector('.side-nav.activeWithJs');
@@ -34,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
   sideNavOverlay.addEventListener('click', closeSideNav);
   sideNavOverlay.addEventListener('touchmove', closeSideNav); // L'événement "touchmove" permet de fermer la side-nav au moindre touché sur mobile
 
+  
   /**
    * Permet de fermer la side-nav, en lui faisant une translation et en mettant un display none à l'overlay
    */

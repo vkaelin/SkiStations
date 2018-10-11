@@ -12,22 +12,25 @@ var filtersButtons = document.querySelectorAll('#filters .btn');
 // On affiche les filtres si le JS est activé
 filters.style.display = 'block';
 
-// Ajout de la fonction filterStationsByLand à tous les boutons de filtres
+// Ajout des fonctions filterStationsByLand et highlightSelectedFilter à tous les boutons de filtres (lors d'un clic)
 filtersGroup.addEventListener('click', function(e) {
-  if (e.target.tagName == 'BUTTON') {
+  if (e.target.tagName === 'BUTTON') {
     filterStationsByLand(e);
     highlightSelectedFilter(e)
   }
-}, false);
+});
 
 
-// filterStationsByLand function
+/**
+ * Permet de filter les sections, donne un display non si on ne veut pas afficher l'élément et enlève la propriété display autrement
+ * @param e, l'événement produit lors du clic
+ */
 function filterStationsByLand(e) {
-  var landChosen = e.target.textContent.toLowerCase();
+  var landChosen = e.target.textContent.toLowerCase(); // canton choisi
   var allStations = document.querySelectorAll('.station');
 
   for (var i = 0; i < allStations.length; i++) {
-    if (landChosen == 'toutes') {
+    if (landChosen === 'toutes') {
       allStations[i].style.display = '';
     }
     else if (allStations[i].className.indexOf(landChosen) >= 0) {
@@ -40,7 +43,10 @@ function filterStationsByLand(e) {
 }
 
 
-// highlightSelectedFilter function
+/**
+ *  Permet de de donner la classe btn à tous les boutons et la classe btn--primary en plus au bouton qui a été cliqué
+ * @param e, l'événement produit lors du clic
+ */
 function highlightSelectedFilter(e) {
   for (var i = 0; i < filtersButtons.length; i++) {
     filtersButtons[i].className = 'btn';

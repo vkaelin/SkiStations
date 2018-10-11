@@ -9,11 +9,7 @@ html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
-  background: #ffffff;
-
-  background-image: url('../images/background.png');
-  background-repeat: repeat-x;
-  background-attachment: fixed;
+  background: #fff url('../images/background.png') repeat-x fixed;
   background-size: 800px;
 }
 

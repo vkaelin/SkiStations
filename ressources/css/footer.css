@@ -17,25 +17,6 @@
     flex-wrap: wrap;
 }
 
-.footer .global-nav {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer .global-nav > li:first-child {
-    margin: 0;
-}
-
-.footer .global-nav > li {
-    float: left;
-    margin-left: 16px;
-}
-
 .footer a {
     color: #bbc1c6;
     text-decoration: none;

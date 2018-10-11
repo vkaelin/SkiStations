@@ -18,6 +18,21 @@
   margin: 0;
 }
 
+.simple-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.simple-nav > li:first-child {
+  margin: 0;
+}
+
+.simple-nav > li {
+  float: left;
+  margin-left: 16px;
+}
+
 .mt-64 {
   margin-top: 64px;
 }

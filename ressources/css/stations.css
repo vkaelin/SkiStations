@@ -6,9 +6,9 @@
 **/
 .passion-desc {
   background: #fff;
-  /*box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);*/
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,.22), 0 5px 15px 0 rgba(0,0,0,.16);
-  border-radius: 2.5px;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+
+  border-radius: 3px;
   font-size: 16px;
 
   padding: 32px;
@@ -16,7 +16,15 @@
   position: relative;
 }
 
-.passion-desc::after {
+.passion-desc:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.22), 0 5px 15px 0 rgba(0, 0, 0, 0.16);
+}
+
+.passion-desc:hover::after {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.22);
+}
+
+.passion-desc::after { /* Triangle en dessous */
   content:'';
   position: absolute;
   top: 100%;
@@ -28,7 +36,7 @@
   border-top: 10px solid #fff;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,.22);
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11);
 }
 
 #filters {

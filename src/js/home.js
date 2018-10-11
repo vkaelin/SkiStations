@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     changeBtnMasthead();
   });
 
+  
   /**
    * Change le contenu du bouton du masthead en fonction de la taille actuelle de la fenêtre
    */
