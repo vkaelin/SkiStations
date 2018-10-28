@@ -9,7 +9,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   // Bouton recherche dans le masthead
-  const searchBtnMasthead = document.querySelector('.masthead .input-row .btn');
+  var searchBtnMasthead = document.querySelector('.masthead .input-row .btn');
 
   // On appelle la fonction changeBtnMasthead() au chargement de la page et à chaque fois que la taille de la page est redéfinie
   changeBtnMasthead();

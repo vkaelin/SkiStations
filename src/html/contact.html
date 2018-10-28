@@ -125,7 +125,70 @@
   <!-- END HEADER -->
 
   <main>
-    <h1>Contact</h1>
+    <div class="container mt-64">
+      <h1 class="border-l h2-like">Contact</h1>
+      <div class="presentation">
+        <div class="presentation_img"></div>
+        <div class="presentation__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit vel minus distinctio nam tempore iure
+          minima molestiae ullam perferendis recusandae, corporis quae placeat dolor, quisquam et magnam ad dolorum
+          deleniti?
+        </div>
+      </div>
+
+      <form action="contact.html" class="form-inpage">
+        <div class="row">
+          <div class="input-group--horizontal">
+            <label for="name" class="input-group__label">
+              <i class="fas fa-user-circle"></i>
+            </label>
+            <input id="name" type="text" class="input-group__field" placeholder="NOM / PRÉNOM">
+          </div>
+          <div class="input-group--horizontal">
+            <label for="email" class="input-group__label">
+              <i class="fas fa-envelope"></i>
+            </label>
+            <input id="email" type="email" class="input-group__field" placeholder="MAIL">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group--horizontal">
+            <label for="phone" class="input-group__label">
+              <i class="fas fa-phone"></i>
+            </label>
+            <input id="phone" type="number" class="input-group__field" placeholder="TÉLÉPHONE">
+          </div>
+          <div class="input-group--horizontal">
+            <label for="subject" class="input-group__label">
+              <i class="fas fa-align-right"></i>
+            </label>
+            <input id="subject" type="text" class="input-group__field" placeholder="SUJET">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group--horizontal">
+            <label for="message" class="input-group__label">
+              <i class="fas fa-pen"></i>
+            </label>
+            <textarea id="message" class="input-group__field" placeholder="MESSAGE"></textarea>
+          </div>
+          <div class="prompt--text">
+            <div class="form-infos">
+              Les données recueillies sont confidentielles et vous disposez d'un droit d'accès, de modification, de
+              rectification et de suppression des données qui vous concernent (en application de l'article 34 de la loi
+              n°78-17 du 06 janvier 1978, dite Informatique et Libertés). Pour l'exercer, merci de nous contacter par
+              email, en
+              précisant vos coordonnées.
+            </div>
+            <div class="prompt">
+              <button class="btn btn--primary btn-xl prompt__confirm">ENVOYER</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
 
 

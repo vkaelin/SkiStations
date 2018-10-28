@@ -5,19 +5,19 @@
 * Description   : Feuille de style gérant le bas de page du site
 **/
 .footer {
-    background-color: #2F365F;
-    color: #bbc1c6;
-    padding: 48px 0;
+  background-color: #2F365F;
+  color: #bbc1c6;
+  padding: 48px 0;
 }
 
 .footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer a {
-    color: #bbc1c6;
-    text-decoration: none;
+  color: #bbc1c6;
+  text-decoration: none;
 }
