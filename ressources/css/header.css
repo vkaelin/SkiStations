@@ -4,7 +4,6 @@
 * Date          : 17.09.2018
 * Description   : Feuille de style gérant la navigation principale du site
 **/
-
 .header {
   display: flex;
   margin: 25px 0 0;
@@ -231,5 +230,3 @@
   color: #6574CD;
   border-bottom: 2px solid #6574CD;
 }
-
-

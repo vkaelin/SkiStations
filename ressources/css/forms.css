@@ -4,7 +4,6 @@
 * Date          : 20.09.2018
 * Description   : Feuille de style gérant les différents formulaires du site
 **/
-
 /* INLINE */
 .input-inline {
   margin: 0 auto 30px auto; 
@@ -77,6 +76,7 @@
 }
 
 .input-group__field {
+  -webkit-appearance: none; /* Pour que le box shadow sur l'input s'affiche bien sur IOS */
   margin: 0 0 16px;
   font-size: 1.6em;
   display: block;
@@ -87,11 +87,13 @@
   background-color: #fff;
   border: none;
   border-bottom: 1px solid #606F7B;
+  border-radius: 0; /* Pour enlever le radius de base sur mobile */
   transition: all 0.15s;
 }
 
 .input-group__field:focus {
   border-color: #2F365F;
+  -webkit-box-shadow: 0 1px 0 0 #2F365F;
   box-shadow: 0 1px 0 0 #2F365F;
   outline: none;
 }
@@ -160,4 +162,21 @@
 .prompt__confirm {
   flex: 1 0 auto;
   justify-content: center;
+}
+
+/* Placeholders */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: "Lato", helvetica, arial, sans-serif;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: "Lato", helvetica, arial, sans-serif;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: "Lato", helvetica, arial, sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: "Lato", helvetica, arial, sans-serif;
 }
