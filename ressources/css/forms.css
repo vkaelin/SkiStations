@@ -64,6 +64,10 @@
   border-radius: 3px;
 }
 
+.input-group--horizontal {
+  position: relative;
+}
+
 .input-group__label {
   display: inline-block;
   margin: 0 0 16px;
@@ -75,15 +79,21 @@
   color: #2F365F;
 }
 
+.label--icon {
+  position: absolute; /* Sur mobile */ 
+  left: 0;
+  top: 10px;
+}
+
 .input-group__field {
   -webkit-appearance: none; /* Pour que le box shadow sur l'input s'affiche bien sur IOS */
   margin: 0 0 16px;
-  font-size: 1.6em;
+  font-size: 16px;
   display: block;
   width: 100%;
   box-sizing: border-box;
 
-  padding: 16px;
+  padding: 16px 16px 16px 35px;
   background-color: #fff;
   border: none;
   border-bottom: 1px solid #606F7B;
@@ -118,17 +128,23 @@
   .input-group--horizontal {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     width: 45%;
   }
 
   .input-group--horizontal .input-group__label{
+    position: static; /* Pour enlever le position absolute */
     flex: 0 1 10%;
   }
 
   .input-group--horizontal .input-group__field {
     flex: 1 0 auto;
     width: auto; /* pour annuler le width 100% */
+    padding: 16px;
+  }
+
+  .label--icon {
+    margin: 13px 0 0 0;
   }
 
   .prompt--text {

@@ -20,7 +20,6 @@ filtersGroup.addEventListener('click', function(e) {
   }
 });
 
-
 /**
  * Permet de filter les sections, donne un display non si on ne veut pas afficher l'élément et enlève la propriété display autrement
  * @param e, l'événement produit lors du clic
@@ -42,7 +41,6 @@ function filterStationsByLand(e) {
   }
 }
 
-
 /**
  *  Permet de de donner la classe btn à tous les boutons et la classe btn--primary en plus au bouton qui a été cliqué
  * @param e, l'événement produit lors du clic
@@ -53,3 +51,15 @@ function highlightSelectedFilter(e) {
   }
   e.target.className = 'btn btn--primary';
 }
+
+
+var href = window.location.href;
+
+/*if(href.indexOf('search') != -1 ) {
+  console.log(href);
+  var searchedItem = href.split('=')[1];
+  var newdiv = document.createElement('div');
+  //console.log(searchedItem.target.textContent);
+  newdiv.target.textContent = searchedItem;
+  console.log(newdiv.target.textContent);
+}*/

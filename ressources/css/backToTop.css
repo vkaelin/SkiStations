@@ -1,0 +1,65 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 05.11.2018
+* Description   : Feuille de style gérant le style du bouton pour revenir en haut de la page
+**/
+.back-to-top {
+  position: fixed;
+  right: 1%;
+  bottom: -7.5%;
+  height: 15px;
+  width: 50px;
+
+  font-size: 10px;
+  color: transparent;
+  opacity: 0.5;
+  z-index: 1;
+  visibility: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all 0.25s ease-in-out;
+  background-color: #5661B3;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  opacity: 1;
+ }
+
+.back-to-top::before,
+.back-to-top::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top: 0;
+}
+
+.back-to-top::before { /* Triangle du haut */
+  top: -25px;
+  z-index: 2;
+  border-bottom: 25px solid #5661B3;
+}
+
+.back-to-top::after { /* Triangle du bas*/
+  bottom: 0;
+  z-index: 3;
+  border-bottom: 25px solid #191E38;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  height: 50px;
+  color: #fff;
+}
+
+.back-to-top--display {
+  bottom: 1.25%;
+  visibility: visible;
+}

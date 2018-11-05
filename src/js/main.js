@@ -7,7 +7,9 @@
 
 // On attend que le contenu HTML de la page soit chargé avant de lancer ce script
 document.addEventListener("DOMContentLoaded", function() {
-
+  /*======================
+          Header
+  ======================*/
   // Activer le header et la side-nav si le JS est activé
   var headerWithJS = document.querySelector('.header.activeWithJs');
   var sideNavWithJS = document.querySelector('.side-nav.activeWithJs');
@@ -33,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
   sideNavOverlay.addEventListener('click', closeSideNav);
   sideNavOverlay.addEventListener('touchmove', closeSideNav); // L'événement "touchmove" permet de fermer la side-nav au moindre touché sur mobile
 
-  
   /**
    * Permet de fermer la side-nav, en lui faisant une translation et en mettant un display none à l'overlay
    */
@@ -41,5 +42,24 @@ document.addEventListener("DOMContentLoaded", function() {
     sideNav.style.transform = 'translateX(-100%)';
     sideNavOverlay.style.display = 'none';
   }
+  
+  /*======================
+        Back-to-top 
+  ======================*/
+  var backToTop = document.querySelector('.back-to-top');
 
+  window.addEventListener('scroll', function() {
+    var scrollBarPosition = window.pageYOffset; // Position du scroll par rapport au haut de la page
+    if (scrollBarPosition > 800) {
+      backToTop.classList.add('back-to-top--display'); // On fait apparaître le back-to-top
+    } else {
+      backToTop.classList.remove('back-to-top--display'); // On enlève le back-to-top
+    }
+  });
+
+  // Au scroll en haut de la page lors du clique
+  backToTop.addEventListener('click', function() {
+    // behavior smooth: rend fluide l'animation, block start : fait l'animation jusqu'au début de l'élément (ici élément html), inline nearest : valeur par défaut
+    document.documentElement.scrollIntoView({behavior:"smooth", block: "start", inline: "nearest"});
+  });
 });

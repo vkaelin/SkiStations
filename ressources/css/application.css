@@ -12,6 +12,7 @@
 @import url("typography.css");
 @import url("buttons.css");
 @import url("logo.css");
+@import url("backToTop.css");
 
 /* Components */
 @import url("header.css");
