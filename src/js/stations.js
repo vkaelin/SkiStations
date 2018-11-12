@@ -51,15 +51,3 @@ function highlightSelectedFilter(e) {
   }
   e.target.className = 'btn btn--primary';
 }
-
-
-var href = window.location.href;
-
-/*if(href.indexOf('search') != -1 ) {
-  console.log(href);
-  var searchedItem = href.split('=')[1];
-  var newdiv = document.createElement('div');
-  //console.log(searchedItem.target.textContent);
-  newdiv.target.textContent = searchedItem;
-  console.log(newdiv.target.textContent);
-}*/

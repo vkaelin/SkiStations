@@ -111,11 +111,15 @@
     display: none;
   }
 
+  .header-content .logo-link {
+    margin: 0 0 0 auto;
+  }
+
   .header-content #header__logo {
     position: static;
     width: 50px;
     height: 50px;
-    margin: 0 0 0 auto;
+    margin: 0;
   }
 
   .page-name {
@@ -171,7 +175,7 @@
   padding: 20px 20px 10px 20px;
 }
 
-.side-nav a {
+.side-nav li a {
   color: rgba(0, 0, 0, 0.87);
   line-height: 48px;
   text-decoration: none;
@@ -181,7 +185,7 @@
   align-items: center;
 }
 
-.side-nav a:hover {
+.side-nav li a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
