@@ -58,9 +58,9 @@
 
 /* Différentes images */
 .block-with-img__img.byLand {
-  background: url('../../ressources/images/stats/parCanton.PNG') no-repeat center/contain;
+  background: url('../../ressources/images/stats/parCanton.png') no-repeat center/contain;
 }
 
 .block-with-img__img.height {
-  background: url('../../ressources/images/stats/altitude.PNG') no-repeat center/contain;
+  background: url('../../ressources/images/stats/altitude.png') no-repeat center/contain;
 }
