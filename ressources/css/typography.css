@@ -47,3 +47,14 @@ h3 {
   line-height: 1.2;
   color: #324355;
 }
+
+a {
+  color: #2F365F;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #5461aa;
+  text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+/**
+* ETML
+* Auteur        : Valentin Kaelin
+* Date          : 29.10.2018
+* Description   : Feuille de style pour le composant contenant un texte et une image utilisé sur les pages stats et contact
+**/
+.block-with-img {
+  display: flex;
+  margin: 0 0 32px 0;
+  background: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.block-with-img .block-with-img__img {
+  flex: 0 0 300px;
+  min-height: 300px;
+  background: url('../../ressources/images/me.jpg') no-repeat center/cover;
+}
+
+.block-with-img.xl .block-with-img__img {
+  flex: 0 0 500px;
+  min-height: 300px;
+}
+
+.block-with-img .block-with-img__text {
+  width: 100%;
+  padding: 32px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 880px) { /* Sur mobiles et tablettes */
+  .block-with-img {
+    display: block; /* On enlève le flex */
+  }
+
+  .block-with-img .block-with-img__text {
+    width: auto; /* Pour annuler le width 100% */
+    padding: 16px 32px;
+  }
+
+  .block-with-img {
+      flex-direction: column;
+  }
+
+  .block-with-img.circle .block-with-img__img {
+    flex: 0 0 200px;
+    min-height: auto; /* Pour annuler le min-height 300px */
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 32px;
+    margin-left: 50%;
+    transform: translateX(-50%); /* Centrer l'image */
+  }
+}
+
+/* Différentes images */
+.block-with-img__img.byLand {
+  background: url('../../ressources/images/stats/parCanton.PNG') no-repeat center/contain;
+}
+
+.block-with-img__img.height {
+  background: url('../../ressources/images/stats/altitude.PNG') no-repeat center/contain;
+}

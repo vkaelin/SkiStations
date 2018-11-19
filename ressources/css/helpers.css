@@ -49,3 +49,7 @@
   border-left: 7px solid #2F365F;
   padding-left: 5px;
 }
+
+.bold {
+  font-weight: bold;
+}
