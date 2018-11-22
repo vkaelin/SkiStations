@@ -37,3 +37,19 @@ body {
     width: 70%;
   }
 }
+
+/* Changement de la couleur de fond lorsque l'on sélectionne du contenu sur le site */
+::selection {
+  background: #2F365F;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #2F365F;
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background: #2F365F;
+  color: #ffffff;
+}
