@@ -61,17 +61,17 @@
 
 /* Différentes images */
 .block-with-img__img.byLand {
-  background-image: url('../../ressources/images/stats/parCanton.png');
+  background-image: url('../../ressources/images/stats/byLand.PNG');
 }
 
 .block-with-img__img.height {
-  background-image: url('../../ressources/images/stats/altitude.png');
+  background-image: url('../../ressources/images/stats/height.PNG');
 }
 
 .block-with-img__img.distance {
-  background-image: url('../../ressources/images/stats/distanceSkiable.PNG');
+  background-image: url('../../ressources/images/stats/distance.PNG');
 }
 
 .block-with-img__img.open {
-  background-image: url('../../ressources/images/stats/stationsOuvertes.PNG');
+  background-image: url('../../ressources/images/stats/openStations.PNG');
 }
