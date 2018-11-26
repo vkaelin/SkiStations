@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Au scroll en haut de la page lors du clique
+  // On scroll en haut de la page lors du clique
   backToTop.addEventListener('click', function() {
     // behavior smooth: rend fluide l'animation, block start : fait l'animation jusqu'au début de l'élément (ici élément html), inline nearest : valeur par défaut
     document.documentElement.scrollIntoView({behavior:"smooth", block: "start", inline: "nearest"});
