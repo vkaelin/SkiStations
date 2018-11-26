@@ -22,6 +22,9 @@
 .block-with-img.xl .block-with-img__img {
   flex: 0 0 500px;
   min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .block-with-img .block-with-img__text {
@@ -41,7 +44,7 @@
   }
 
   .block-with-img {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .block-with-img.circle .block-with-img__img {
@@ -58,9 +61,17 @@
 
 /* Différentes images */
 .block-with-img__img.byLand {
-  background: url('../../ressources/images/stats/parCanton.png') no-repeat center/contain;
+  background-image: url('../../ressources/images/stats/parCanton.png');
 }
 
 .block-with-img__img.height {
-  background: url('../../ressources/images/stats/altitude.png') no-repeat center/contain;
+  background-image: url('../../ressources/images/stats/altitude.png');
+}
+
+.block-with-img__img.distance {
+  background-image: url('../../ressources/images/stats/distanceSkiable.PNG');
+}
+
+.block-with-img__img.open {
+  background-image: url('../../ressources/images/stats/stationsOuvertes.PNG');
 }
