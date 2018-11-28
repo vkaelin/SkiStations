@@ -49,7 +49,7 @@
 
   .block-with-img.circle .block-with-img__img {
     flex: 0 0 200px;
-    min-height: auto; /* Pour annuler le min-height 300px */
+    min-height: 0; /* Pour annuler le min-height 300px */
     width: 200px;
     height: 200px;
     border-radius: 200px;
