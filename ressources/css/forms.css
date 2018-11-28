@@ -4,32 +4,27 @@
 * Date          : 20.09.2018
 * Description   : Feuille de style gérant les différents formulaires du site
 **/
-/* INLINE */
+/* INLINE : Page d'accueil */
 .input-inline {
   margin: 0 auto 30px auto; 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) { /*Tablette */
   .input-inline {
     max-width: 80%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /* Grande tablette / petit ordinateur */
   .input-inline {
     max-width: 60%;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) { /* Ordinateur */
   .input-inline {
     max-width: 40%;
   }
-}
-
-.input-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .input-inline__label {
@@ -38,10 +33,17 @@
   cursor: pointer;
 }
 
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .input-row__field {
+  -webkit-appearance: none; /* Pour que le box shadow sur l'input s'affiche bien sur IOS */
   flex: 1 0 auto;
   background-color: #fff;
   border: 1px solid #e3e5e9;
+  border-radius: 0; /* Pour enlever le radius de base sur mobile */
   box-shadow: none;
   padding: 16px;
   font-size: 16px;
@@ -55,7 +57,7 @@
 }
 
 
-/* GROUP */
+/* GROUP : Page contact */
 .form-inpage {
   background: #fff;
   margin: 0 auto 16px auto;
@@ -134,7 +136,6 @@
 
   .input-group--horizontal .input-group__label{
     position: static; /* Pour enlever le position absolute */
-    flex: 0 1 10%;
   }
 
   .input-group--horizontal .input-group__field {
@@ -144,7 +145,7 @@
   }
 
   .label--icon {
-    margin: 13px 0 0 0;
+    margin: 13px 0 0 0; /* Centrer verticalement */
   }
 
   .prompt--text {
@@ -158,6 +159,7 @@
 }
 
 .prompt--text .btn {
+  width: 100%;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -169,18 +171,7 @@
   border-radius: 15px 15px 0 0;
 }
 
-.prompt {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.prompt__confirm {
-  flex: 1 0 auto;
-  justify-content: center;
-}
-
-/* Placeholders */
+/* Placeholders des inputs */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: "Lato", helvetica, arial, sans-serif;
 }

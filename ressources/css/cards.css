@@ -74,7 +74,7 @@
   visibility: hidden;
   background-color: #3D4852;
   padding: 4px 0;
-  border-radius: 9999px;
+  border-radius: 999px;
 
   color: #fff;
   text-align: center;
@@ -112,7 +112,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin: 0 0 64px 0;
 }
 
@@ -120,14 +119,14 @@
   width: 100%; /* Sur mobile */
 }
 
-@media screen  and (min-width: 600px) {
+@media screen  and (min-width: 600px) { /* Tablette */
   .card {
     float: left;
     width: calc(50% - 16px); /* On met pas exactement 50% pour laisser de l'espace entre les cartes */
   }
 }
 
-@media screen  and (min-width: 1000px) {
+@media screen  and (min-width: 1000px) { /* Ordinateur */
   .card {
     width: calc(33% - 16px);
   }

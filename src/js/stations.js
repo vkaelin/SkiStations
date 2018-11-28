@@ -32,10 +32,10 @@ function filterStationsByLand(e) {
     if (landChosen === 'toutes') {
       allStations[i].style.display = '';
     }
-    else if (allStations[i].className.indexOf(landChosen) >= 0) {
+    else if (allStations[i].className.indexOf(landChosen) >= 0) { // on affiche si c'est le canton choisi
       allStations[i].style.display = '';
     }
-    else {
+    else { // sinon on display none
       allStations[i].style.display = 'none';
     }
   }

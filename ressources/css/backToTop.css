@@ -7,7 +7,7 @@
 .back-to-top {
   position: fixed;
   right: 1%;
-  bottom: -7.5%;
+  bottom: -7.5%; /* Hidden */
   height: 15px;
   width: 50px;
 
@@ -55,8 +55,8 @@
 
 .back-to-top:hover,
 .back-to-top:focus {
-  height: 50px;
-  color: #fff;
+  height: 50px; /* S'agrandit */
+  color: #fff; /* Affiche le texte */
 }
 
 .back-to-top--display {

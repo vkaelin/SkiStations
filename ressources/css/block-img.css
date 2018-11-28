@@ -19,7 +19,7 @@
   background: url('../../ressources/images/me.jpg') no-repeat center/cover;
 }
 
-.block-with-img.xl .block-with-img__img {
+.block-with-img.xl .block-with-img__img { /* Block avec une image plus grande : 500px */
   flex: 0 0 500px;
   min-height: 300px;
   background-repeat: no-repeat;
@@ -53,13 +53,11 @@
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    margin-top: 32px;
-    margin-left: 50%;
-    transform: translateX(-50%); /* Centrer l'image */
+    margin: 0 auto; /* centrer l'image */
   }
 }
 
-/* Différentes images */
+/* Différentes images sur la page stats */
 .block-with-img__img.byLand {
   background-image: url('../../ressources/images/stats/byLand.PNG');
 }
