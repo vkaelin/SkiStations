@@ -19,7 +19,7 @@
   background: url('../../ressources/images/me.jpg') no-repeat center/cover;
 }
 
-.block-with-img.xl .block-with-img__img { /* Block avec une image plus grande : 500px */
+.block-with-img.xl .block-with-img__img { /* Block avec une image plus grande : 500px de large */
   flex: 0 0 500px;
   min-height: 300px;
   background-repeat: no-repeat;
@@ -33,7 +33,18 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 880px) { /* Sur mobiles et tablettes */
+@media screen and (max-width: 1100px) { /* Block XL sur plus petit écran */
+  .block-with-img.xl {
+    display: block; /* On enlève le flex */
+  }
+
+  .block-with-img.xl .block-with-img__text {
+    width: auto; /* Pour annuler le width 100% */
+    padding: 16px 32px;
+  }
+}
+
+@media screen and (max-width: 880px) { /* Block Circle sur plus petit écran */
   .block-with-img {
     display: block; /* On enlève le flex */
   }
@@ -43,12 +54,7 @@
     padding: 16px 32px;
   }
 
-  .block-with-img {
-    flex-direction: column;
-  }
-
   .block-with-img.circle .block-with-img__img {
-    flex: 0 0 200px;
     min-height: 0; /* Pour annuler le min-height 300px */
     width: 200px;
     height: 200px;
@@ -59,17 +65,17 @@
 
 /* Différentes images sur la page stats */
 .block-with-img__img.byLand {
-  background-image: url('../../ressources/images/stats/byLand.PNG');
+  background-image: url('../../ressources/images/stats/byLand.jpg');
 }
 
 .block-with-img__img.height {
-  background-image: url('../../ressources/images/stats/height.PNG');
+  background-image: url('../../ressources/images/stats/height.jpg');
 }
 
 .block-with-img__img.distance {
-  background-image: url('../../ressources/images/stats/distance.PNG');
+  background-image: url('../../ressources/images/stats/distance.jpg');
 }
 
 .block-with-img__img.open {
-  background-image: url('../../ressources/images/stats/openStations.PNG');
+  background-image: url('../../ressources/images/stats/openStations.jpg');
 }
